@@ -8,21 +8,6 @@ GS Client is a personal package designed to serve as a client library for commun
 - Modular and extensible design
 - Well-documented code for ease of maintenance
 
-## Installation
-
-Clone the repository and install the dependencies using npm or yarn:
-
-```bash
-git clone https://github.com/your-repository/gs_client.git
-cd gs_client
-npm install
-```
-
-
-## Usage
-
-Import the GS Client module into your project:
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
