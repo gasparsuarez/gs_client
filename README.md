@@ -1,6 +1,6 @@
 # GS Client
 
-GS Client is a personal package designed to serve as a client library for communication within the Coffee Point front-end ecosystem. It provides an easy-to-use interface for integrating client-side functionality with your Coffee Point applications.
+GS Client is a personal package designed to serve as a client library. It provides an easy-to-use interface for integrating client-side functionality
 
 ## Features
 
