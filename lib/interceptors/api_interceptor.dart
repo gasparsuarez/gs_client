@@ -19,14 +19,14 @@ class ApiInterceptor extends InterceptorsWrapper {
   ///
   /// [setRefreshToken] should get refresh storage from the storage
   ///
-  /// [setTokenInRequest] If true, the interceptor will set the token in the request
+  /// [includeTokenInRequest] If true, the interceptor will set the token in the request
   ApiInterceptor({
     this.onTokenRefresh,
     this.setBearerTokenInRequest,
     this.onUnauthorizedError,
     this.handleUnauthorizedFailure = false,
     this.setRefreshToken,
-    this.setTokenInRequest = false,
+    this.includeTokenInRequest = false,
   });
 
   /// Function to refresh token
@@ -58,11 +58,11 @@ class ApiInterceptor extends InterceptorsWrapper {
   final bool handleUnauthorizedFailure;
 
   /// If true, the interceptor will set the token in the request
-  final bool setTokenInRequest;
+  final bool includeTokenInRequest;
 
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) async {
-    if (!setTokenInRequest) {
+    if (!includeTokenInRequest) {
       return handler.next(options);
     }
 
